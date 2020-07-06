@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="QuizInternet.css">
+    <script type="text/javascript" src="QuizInternet.js" async></script>
+</head>
+<body>
+
+    <div id="player">
+        <audio autoplay >
+        <source src="calma2.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="centro">
+        <div id="monitor">
+            <div id="comecar" class="centro">COMEÇAR O QUIZ!</div>
+            <div id="quiz" style="display: none">
+                <div id="pergunta"></div>
+                <div id="alternativas">
+                    <div class="posicao">
+                        <div class="alternativa" id="A" onclick="checarResposta('A')"></div>
+                        <div class="alternativa" id="B" onclick="checarResposta('B')"></div>
+                        <div class="alternativa" id="C" onclick="checarResposta('C')"></div>
+                        <div class="alternativa" id="D" onclick="checarResposta('D')"></div>
+                    </div>
+                </div>
+                <div id="tempo">
+                    <div id="contador"></div>
+                    <div id="bbarraTempo"></div>
+                    <div id="barraTempo"></div>
+                </div>
+                <div id="progresso"></div>
+            </div>
+            <div id="pontuacaoContainer" style="display: none"></div>
+        </div>
+    </div>
+</body>
+</html>

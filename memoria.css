@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "membra";
+    src: url("membra.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  font-family: arial;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#9D5900, #3D2200);
+}
+
+.titulo {
+  color: #459FFF;
+  font-family: membra;
+  font-weight: normal;
+  text-align: center;
+  font-size: 5em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  color: #FFBB89;
+  font-size: 2em;
+}
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 125px;
+}
+
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  transition: transform 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg); 
+}
+
+.card.visible .card-front {
+  transform: rotateY(0); 
+}
+
+.card.matched .card-front .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.card-back {
+  background: radial-gradient(#459FFF, #3524FF);
+  border-color: #FF6D00;
+  transform: rotateY(0); 
+}
+
+.figura {
+  position:absolute;
+  top: 65px;
+  align-self: flex-start;
+  transition: transform 100ms ease-in-out;
+  transform: scale(1);
+}
+
+.card-back:hover .figura {
+  transform: scale(2);
+}
+
+.card-value {
+  position: relative;
+  transition: transform 100ms ease-in-out;
+  transform: scale(1);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1.25);
+}
+
+.card-front {
+  background-color: #2190FF;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.overlay-text {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FF6D00;
+  font-family: arial;
+  transition: background-color 500ms, font-size 500ms;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: 10em;
+  }
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  25% {
+    transform: rotate(-30deg)
+  }
+  75% {
+    transform: rotate(30deg)
+  }
+}
+
+.voltar{
+  position: relative;
+  left: 42%;
+  z-index: 1;
+  padding:0.3em 2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 1em;
+  box-sizing: border-box;
+  background-color: #FF6D00;
+  font-family: arial;
+  font-weight:300px;
+  font-size: 2em;
+  color: black;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  transform: scale(.8);
+}
+
+.voltar:hover{
+  color:#000000;
+  background-color:#FF0000;
+  transform: scale(1);
+  position:relative;
+}
+
+.voltar:active{
+  color:#000000;
+  background-color:#00FF00;
+  transform: scale(1);
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,110 @@
+  body  {
+    background-image: url("fundo.jpeg")
+  }
+
+#slides{  
+  	position:relative;
+  	overflow:hidden;
+  	margin:0 auto;
+  	background: transparent;
+  	width:100%;
+  	height:100%;
+  	white-space:nowrap;
+}
+#slides div{
+	position:relative;
+  display:inline-block;
+  margin-right:-4px;
+  white-space:normal;
+  vertical-align:top;
+  background: transparent;
+  width: 100%;
+  height: 600px;
+}
+
+.posicao{
+  position: absolute;
+  justify-content: center;
+  top: 16%;
+  left: 70%;
+  transform: translate(-50%, 25%);
+	text-align:center;
+  display: grid;
+}
+
+.alternativa{
+  position: relative;
+  justify-content: center;
+	padding:0.3em 2em;
+	border:0.1em solid #FFFFFF;
+  width:60%;
+	margin:0 0.3em 0.3em 0;
+	border-radius: 1em;
+	box-sizing: border-box;
+	background-color:#FF6D00;
+	font-family: arial;
+  cursor: pointer;
+	font-weight:300px;
+	font-size: 2em;
+	color: black;
+	transform: translate(-50%, -50%);
+	transition: all 0.2s;
+	transform: scale(.8);
+  display:grid;
+}
+
+.alternativa:hover{
+	color:#000000;
+	background-color:#FF0000;
+	transform: scale(1);
+  cursor: pointer;
+	position:relative;
+}
+
+.alternativa:active{
+	color:#000000;
+  cursor: pointer;
+	background-color:#00FF00;
+	transform: scale(1);
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+  cursor: pointer;
+}
+
+#easteregg{
+    margin : 20px auto;
+    background-color: black;
+    opacity: 1;
+    height: 100vh;
+    width : 100em;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#easteregg img{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-45%,-50%);
+}
+
+#easteregg p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+

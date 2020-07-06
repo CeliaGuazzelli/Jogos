@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="EscolherJogo.css">
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="Slide.js" async></script>
+  <script type="text/javascript" src="resposta.js" async></script>
+  <title> Escolha o Jogo </title> 
+</head>
+  <body>
+
+    <div id="player">
+      <audio autoplay >
+        <source src="calma1.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <audio id="audio" loop="true">
+      <source src="trololo.mp3" type="audio/mpeg">
+    </audio>
+
+   <div id="easteregg" style="display:none"></div>
+
+
+    <div id="slides">
+      <div>
+        <div class="posicao">
+          <a href="JogoDaMemoria.html" class="alternativa">JOGO DA MEMÓRIA</a>
+          <label class="alternativa"><span class="next-slide">JOGAR OS QUIZES</span></label>
+          <a href="MenuInicial.html" class="alternativa">VOLTAR AO MENU</a>
+        </div>
+      </div>
+      <div>
+        <div class="posicao">
+          <a href="QuizInternet.html" class="alternativa">QUIZ SOBRE A INTERNET</a>
+          <a href="QuizGeral.html" class="alternativa">QUIZ DE CONHECIMENTOS GERAIS</a>
+          <label class="alternativa"><span class="back-slide">VOLTAR</span></label>
+        </div>
+        <div>
+          <div class="alternativa" id="respostas" style="display:absolute; opacity:0.25; cursor: pointer; background-color:#FF6D00; width:50%;height:60px; text-align: center; top: -10%; left:50%">PSSST, EU TENHO AS RESPOSTAS</div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

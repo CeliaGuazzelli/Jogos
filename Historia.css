@@ -1,0 +1,127 @@
+body  {
+  background-image: url("fundo.jpeg")
+}
+
+.texto{
+  display:inline-block;
+  padding-left:5em;
+  padding-right: 4em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 6em;
+  box-sizing: border-box;
+  background-color:#aaa;
+  text-decoration:none;
+  font-family: arial;
+  font-weight:300px;
+  font-size: 0.8em;
+  color: black;
+  text-align:center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.anterior span, .proximo span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+    
+.anterior {
+  left: 0;
+}
+
+.proximo {
+  right: 0;
+}
+    
+.proximo span {
+  border-color: transparent transparent transparent #FF6D00;
+  top: 45%;
+  right: 5px;
+  align-self: flex-start;
+  transform: scale(1);
+}
+
+.anterior span {
+  border-color: transparent #FF6D00 transparent transparent;
+  top: 45%;
+  left: 20px;
+  align-self: flex-start;
+  transform: scale(1);
+}
+
+.proximo span:hover, .anterior span:hover {
+  transition: .3s;
+  transform: scale(1.4);
+}
+
+.proximo span:hover{
+  border-color: transparent transparent transparent #FF0000;
+}
+
+.anterior span:hover{
+  border-color: transparent #FF0000 transparent transparent;
+}
+
+#slides{  
+  position:relative;
+  overflow:hidden;
+  margin:0 auto;
+  background:#black;
+  width:100%;
+  height:100%;
+  white-space:nowrap;
+}
+
+#slides div{
+  position:relative;
+  display:inline-block;
+  margin-right:-4px;
+  white-space:normal;
+  vertical-align:top;
+  background:#lightblue;
+  width:100%;
+  height: 100%;
+}
+
+a:hover{
+  color:#000000;
+  background-color:#FF0000;
+  transform: scale(1.2);
+  position:absolute;
+}
+
+a:active{
+  color:#000000;
+  background-color:#00FF00;
+  transform: scale(1.2);
+  position: absolute;
+}
+
+a{
+  display:inline-block;
+  padding:1em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 1em;
+  box-sizing: border-box;
+  background-color:#FF6D00;
+  text-decoration:none;
+  font-family: arial;
+  font-weight:300px;
+  font-size: 2.2em;
+  color: black;
+  text-align:center;
+  position: absolute;
+  align-self: flex-start;
+  top: 37%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  transform: scale(1);
+}

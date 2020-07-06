@@ -1,0 +1,281 @@
+html {
+    min-height: 100vh;
+    font-family: arial;
+}
+
+.centro{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+body{
+    margin: 0;
+    background: radial-gradient(#9D5900, #3D2200);
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#monitor{
+    position: relative;
+	width: 750px;
+	height: 400px;
+	background: lightblue;
+	border: 16px solid #333333;
+	box-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+#monitor::before{
+	content: '';
+	position: absolute;
+	bottom: -59px;
+	left: 49%;
+	width: 70px;
+	height: 60px;
+	background: #222222;
+    transform: perspective(100px) translateX(-50%) rotateX(25deg) skewX(7deg);
+    z-index: -1;
+    transform-origin: bottom;
+}
+
+
+#monitor::after{
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 18px;
+	background: #000;
+	left: 49%;
+	bottom: -77px;
+    transform: translateX(-50%);
+    z-index: -1;
+    transform-origin: bottom;
+}
+
+#comecar{
+    font-size: 1.5em;
+    font-weight: bolder;
+    width:10em;
+    height:1.5em;
+    border : 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    background-color: #FF6D00;
+    position: absolute;
+    left:50%;
+    top:50%;
+    color : black;
+}
+
+#comecar:hover{
+    border: 3px solid black;
+    color : lightgreen;
+}
+
+.posicao{
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+    text-align:center;
+    display: grid;
+}
+
+.alternativa{
+    position: relative;
+    justify-content: center;
+	padding:0.3em 2em;
+	border:0.1em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius: 1em;
+	box-sizing: border-box;
+	background-color:#FF6D00;
+	font-family: arial;
+	font-weight:300px;
+	font-size: 1.2em;
+	color: black;
+	transform: translate(-50%, -50%);
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+.alternativa:hover{
+	color:#000000;
+	background-color:#FF0000;
+	transform: scale(1.2);
+	position:relative;
+}
+
+.alternativa:active{
+	color:#000000;
+	background-color:#00FF00;
+	transform: scale(1.2);
+	position: relative;
+}
+
+#pergunta{
+    font-size: 1.5em;
+    text-align:center;
+}
+
+
+#alternativas{
+    width : 150%;
+    position: absolute;
+    left: -26%;
+    top : 19%;
+    padding : 10px;
+}
+
+#tempo{
+    position: absolute;
+    height : 100px;
+    width : 200px;
+    bottom : 0px;
+    text-align: center;
+}
+
+#contador{
+    font-size: 3em;
+}
+
+#bbarraTempo{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    border: 0.05em solid #ffffff;
+    border-color: black;
+    background-color: gray;
+    margin-left : 25px;
+}
+
+#barraTempo{
+    height : 10px;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    margin-top : -11px;
+    margin-left : 26px;
+}
+
+#progresso{
+    width : 500px;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+    padding:5px;
+    text-align: right;
+}
+
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+
+#pontuacaoContainer{
+    margin : 20px auto;
+    background-color: black;
+    opacity: 1;
+    height: 300px;
+    width : 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    display: none;
+}
+
+#pontuacaoContainer img{
+    position: absolute;
+    top:50px;
+    left:230px;
+}
+
+#pontuacaoContainer p{
+    position: absolute;
+    display: block;
+    width : 59px;
+    height :59px;
+    top:130px;
+    left:325px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.denovo{
+    position: absolute;
+    top: 145%;
+    left:28%;
+    align-self:flex-start;
+    justify-content: center;
+    padding:0.3em 2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    background-color:#FF6D00;
+    font-family: arial;
+    font-size: 1.2em;
+    color: black;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.denovo:hover{
+    color:#000000;
+    background-color:#FF0000;
+    transform: scale(1.2);
+}
+
+.denovo:active{
+    color:#000000;
+    background-color:#00FF00;
+    transform: scale(1.2);
+}
+
+.voltar{
+    position: absolute;
+    top: 165%;
+    left:28%;
+    align-self:flex-start;
+    justify-content: center;
+    padding:0.3em 2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius: 1em;
+    box-sizing: border-box;
+    background-color:#FF6D00;
+    font-family: arial;
+    font-size: 1.2em;
+    color: black;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.voltar:hover{
+    color:#000000;
+    background-color:#FF0000;
+    transform: scale(1.2);
+}
+
+.voltar:active{
+    color:#000000;
+    background-color:#00FF00;
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: black;
+}

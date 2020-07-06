@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<head>
+<title>Instruções</title>
+<style type="text/css">
+
+p{
+  color:white;
+  font-size:20px
+}
+
+h1{
+  color:white;
+  font-size:25px;
+  color:orange;
+  font-weight:bold;
+}
+
+div#um {
+  left:125px;
+  border:1px solid;
+  font: xx-large arial;
+  text-align:center;
+  position:absolute;
+  margin-left:520px;  
+  padding:5px
+}
+
+#hack {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  cursor: pointer;
+  background-size:100%;
+  background-image: url(feliz.png);
+}
+
+#hack:checked + label {
+  background-image: url(bravo.png);
+  background-size:100%;
+}
+
+a:hover{
+  color:#000000;
+  background-color:#FF0000;
+  transform: scale(1.2);
+  position:absolute;
+}
+a:active{
+  color:#000000;
+  background-color:#00FF00;
+  transform: scale(1.2);
+  position: absolute;
+}
+
+a{
+  display:inline-block;
+  height:100px;
+  width: :150px;
+  padding:0.7em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 1em;
+  box-sizing: border-box;
+  background-color:#FF6D00;
+  text-decoration:none;
+  font-family: arial;
+  font-weight:270px;
+  font-size: 2.2em;
+  color: black;
+  text-align:center;
+  position: absolute;
+  align-self: flex-start;
+  top: 80%;
+  left: 5%;
+  vertical-align: center;
+  margin-left:500px;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+</style>
+</head>
+<body background="fundo.jpeg">
+
+  <div id="player">
+    <audio autoplay >
+    <source src="calma1.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+
+<h1 align="center">Instruções para os Quizes</h1>
+<ul>
+<li><p align="center">Há dois quizes com diferentes temas, sendo que cada quiz tem 10 questões.</li>
+<li><p align="center">Com base em seus conhecimentos, escolha a alternativa mais apropriada.</li>
+<li><p align="center">Você terá 30 segundos para responder cada pergunta.</li>
+<li><p align="center">Divirta-se.</li>
+</ul>
+<div id="um"><input type="checkbox" id="hack" /><label for="hack"></label><br/></div>
+
+<div><a href="MenuInicial.html">VOLTAR AO MENU</a></div>
+</body>
+</html>

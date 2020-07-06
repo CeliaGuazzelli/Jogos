@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="memoria.css" type="text/css" rel="stylesheet">
+  <script src="memoria.js" async></script>
+  <title>Jogo da Memória</title>
+</head>
+<body>
+  <h1 class="titulo">JOGO DA MEMÓRIA</h1>
+  <div class="overlay-text visible"><font size="10">
+    <center>O objetivo do jogo é encontrar todos os pares das cartas.</center><br>
+    <center>Será que você consegue encontra-los antes que o tempo acabe?</center><br><br>
+    <center>Clique para começar!</center></font>
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Clique para jogar de novo!</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    <font size="10"> PARABÉNS! VOCÊ VENCEU!<br><br></font>
+    <span class="overlay-text-small">Clique para jogar de novo!</span>
+  </div>
+  
+  <a class="voltar" href="EscolherJogo.html">VOLTAR</a>
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Tempo: <span id="tempo-restante">100</span>
+      </div>
+      <div class="game-info">
+        Viradas: <span id="viradas">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="chrome.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="chrome.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="ie.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="ie.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="opera.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="opera.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="safari.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="safari.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="tor.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="tor.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="mozilla.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="mozilla.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="mosaic.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="mosaic.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="incognito.png" width="50" height="50">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="figura" src="wifi.png" width="50" height="50">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="incognito.png" width="50" height="50">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

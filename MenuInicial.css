@@ -1,0 +1,204 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #262626;
+}
+
+@font-face {
+    font-family: "membra";
+    src: url("membra.ttf");
+}
+
+.titulo{
+	padding:1.5em 0em;
+	border-radius: 1em;
+ 	width: 100%;
+	background-color: transparent;
+	text-decoration: underline;
+	font-family: membra;
+	font-size: 3em;
+	color: #42A5F5;
+	text-align:center;
+}
+
+#centro{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.notebook{
+	width: 550px;
+	height: 300px;
+	background: lightblue;
+	border: 16px solid #333333;
+	box-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+	
+}
+
+.notebook::before{
+	content: '';
+	position: absolute;
+	bottom: -32px;
+	left: -15%;
+	width: 130%;
+	height: 10px;
+	background: #fff;
+	border-top: 2px solid #ccc;
+	border-bottom: 4px solid #ccc;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.notebook::after{
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #000;
+	left: 50%;
+	top: -10px;
+}
+
+a:hover{
+	color:#000000;
+	background-color:#FF0000;
+	transform: scale(1.2);
+	position:absolute;
+}
+
+a:active{
+	color:#000000;
+	background-color:#00FF00;
+	transform: scale(1.2);
+	position: absolute;
+}
+
+a{
+  display:inline-block;
+	padding:1em 1.2em;
+	border:0.1em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius: 1em;
+	box-sizing: border-box;
+	background-color:#FF6D00;
+	text-decoration:none;
+	font-family: arial;
+	font-weight:300px;
+	font-size: 2.2em;
+	color: black;
+	text-align:center;
+	position: absolute;
+	align-self: flex-start;
+	top: 33%;
+	left: 22%;
+	transform: translate(-50%, -50%);
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+
+.anterior span, .proximo span {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border: solid 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+    
+.anterior {
+	left: 0;
+}
+
+.proximo {
+	right: 0;
+}
+    
+.proximo span {
+	border-color: transparent transparent transparent #FF6D00;
+    top: 45%;
+	right: 5px;
+    align-self: flex-start;
+    transform: scale(1);
+}
+
+.anterior span {
+	border-color: transparent #FF6D00 transparent transparent;
+    top: 45%;
+	left: 20px;
+    align-self: flex-start;
+    transform: scale(1);
+}
+
+.proximo span:hover, .anterior span:hover {
+	transition: .3s;
+	transform: scale(1.4);
+}
+
+.proximo span:hover{
+ 	border-color: transparent transparent transparent #FF0000;
+}
+
+.anterior span:hover{
+	border-color: transparent #FF0000 transparent transparent;
+}
+
+
+#slides{  
+  position:relative;
+  overflow:hidden;
+  margin:0 auto;
+  background:#lightblue;
+  width:100%;
+  height:300px;
+  white-space:nowrap;
+}
+
+#slides div{
+  position:relative;
+  display:inline-block;
+  margin-right:-4px;
+  white-space:normal;
+  vertical-align:top;
+  background:lightblue;
+  width:100%;
+  height: 100%;
+}
+
+#easteregg{
+    background-color: black;
+    z-index: 50;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width : 100em;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    display: flex;
+}
+
+#easteregg img{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-45%,-50%);
+}
+
+#easteregg p{
+    position: absolute;
+    display: block;
+    width: 59px;
+    height :59px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}

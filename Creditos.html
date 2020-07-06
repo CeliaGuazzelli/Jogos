@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+
+<style style="text/css">
+
+.scroll-up {
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	background: url(fundo.jpeg);
+	color: orange;
+}
+.scroll-up h1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	/* Starting position */
+	-moz-transform:translateY(100%);
+	-webkit-transform:translateY(100%);	
+	transform:translateY(100%);
+	/* Apply animation to this element */	
+	-moz-animation: scroll-up 15s linear infinite;
+	-webkit-animation: scroll-up 15s linear infinite;
+	animation: scroll-up 15s linear infinite;
+}
+.scroll-up p {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	font-size: 30px;
+	/* Starting position */
+	-moz-transform:translateY(100%);
+	-webkit-transform:translateY(100%);	
+	transform:translateY(100%);
+	/* Apply animation to this element */	
+	-moz-animation: scroll-up 15s linear infinite;
+	-webkit-animation: scroll-up 15s linear infinite;
+	animation: scroll-up 15s linear infinite;
+}
+.scroll-up a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	font-size: 30px;
+	/* Starting position */
+	-moz-transform:translateY(100%);
+	-webkit-transform:translateY(100%);	
+	transform:translateY(100%);
+	/* Apply animation to this element */	
+	-moz-animation: scroll-up 15s linear infinite;
+	-webkit-animation: scroll-up 15s linear infinite;
+	animation: scroll-up 15s linear infinite;
+}
+a:hover{
+	color:#000000;
+	background-color:#FF0000;
+	transform: scale(1.2);
+	position:absolute;
+}
+
+a:active{
+	color:#000000;
+	background-color:#00FF00;
+	transform: scale(1.2);
+	position: absolute;
+}
+
+a{
+	display:inline-block;
+	height:100px;
+	width: :150px;
+	padding:2px 1.2em;
+	border:0.1em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius: 1em;
+	box-sizing: border-box;
+	background-color:#FF6D00;
+	text-decoration:none;
+	font-family: arial;
+	font-weight:270px;
+	font-size: 2.2em;
+	color: black;
+	text-align:center;
+	position: absolute;
+	align-self: flex-start;
+	top: 80%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	transition: all 0.2s;
+	transform: scale(1);
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 	0%   { -moz-transform: translateY(100%); }
+	100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 	0%   { -webkit-transform: translateY(100%); }
+ 	100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ 	-moz-transform: translateY(100%); /* Browser bug fix */
+ 	-webkit-transform: translateY(100%); /* Browser bug fix */
+ 	transform: translateY(100%); 		
+ }
+ 100% { 
+ 	-moz-transform: translateY(-100%); /* Browser bug fix */
+ 	-webkit-transform: translateY(-100%); /* Browser bug fix */
+ 	transform: translateY(-100%); 
+ }
+}
+</style>
+</head>
+<body>
+
+	<div id="player">
+    	<audio autoplay >
+    	<source src="arnold.mp3" type="audio/mpeg">
+    	</audio>
+	</div>
+
+	<div class="scroll-up">
+
+	<h1>Créditos </h1><br><br><br><p>Milena – História, Enredo e Perguntas</p><br><br><br><p>Pablo – Cenário, Programação, Personagem e Soundtrack</p><br><br><br>
+	<p>Rafael – Cenário, Design, Layout, Programação e Soundtrack</p><br><br><br><p>William – Cenário e Personagem</p><br><br><br>
+	</div>
+	<div><p><a href="MenuInicial.html">VOLTAR AO MENU</a></p></div>
+</body>
+</html>

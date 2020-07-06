@@ -1,0 +1,8 @@
+Para melhor experiência, use o navegador "Mozilla Firefox" e ative o "autoplay"
+Para isso, entre nas Configurações>Privacidade e Segurança>Permissões>Reprodução Automática>Configurações>Padrão em todos os sites>Permitir áudio e vídeo.
+
+Isto é necessário, uma vez que o Chrome desabilitou o autoplay.
+
+Divirta-se com os quizes e o jogo da memória :D
+
+Há segredos escondidos, será que você consegue encontrar todos? 
